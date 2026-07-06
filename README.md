@@ -32,3 +32,13 @@ Users can search for any city worldwide and view detailed weather metrics with d
 - Error Handling
 - Responsive UI Design
 - Conditional Rendering
+
+## Tech Stack
+
+- HTML5
+- CSS
+- JavaScript (ESC6+)
+- FetchAPI
+- Async/Await
+- Geocoding API
+- Open-Meteo API
