@@ -1,2 +1,34 @@
-# weather-vista-js
-A responsive weather dashboard built with JavaScript that fetches real-time weather data from the Open-Meteo API, featuring dynamic themes, weather condition mapping, loading states, and comprehensive weather metrics.
+# WeatherVista 🌤️
+
+WeatherVista is a responsive weather application that provides real-time weather information using the Open-Meteo API crafted using Javascript.
+
+Users can search for any city worldwide and view detailed weather metrics with dynamic weather-based themes, loading states, and intuitive weather condition indicators.
+
+## Features
+
+- Real-time weather data
+- City search using Geocoding API
+- Temperature & feels like
+- Humidity
+- Wind speed
+- Visibility
+- Pressure
+- Cloud cover
+- Rain & precipitation
+- Dynamic weather icons
+- Weather-based gradient themes
+- Loading indicator
+- Error handling
+- Responsive design
+
+## Concepts Used
+
+- REST APIs
+- Fetch API
+- Async/Await
+- JSON Parsing
+- DOM Manipulation
+- Event Handling
+- Error Handling
+- Responsive UI Design
+- Conditional Rendering
