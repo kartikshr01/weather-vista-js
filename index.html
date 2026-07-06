@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeatherVista | Weather Forecast Application</title>
+  <link rel="icon" type="image/x-icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <p id="projectTitle">WeatherVista</p>
+    <p id="description">Weather Forecast Application</p>
+    <div class="searchSection">
+      <input type="text" name="city" id="city" placeholder="Enter your city ...">
+      <button class="buttons" id="searchButton" onclick="getCityName()">CHECK WEATHER</button>
+    </div>
+
+    <div id="loading" class="spinner"></div>
+
+    <div class="weatherCard" id="weatherCard" style="display: none;">
+
+      <div class="weatherHeader">
+        <p id="weatherIcon">☀️</p>
+        <h2 id="temperature">30°C</h2>
+        <p id="weatherDescription">Cloudy</p>
+      </div>
+
+      <div class="weatherInfo">
+        <div class="info">
+          <span>📍 City</span>
+          <p id="cityName"></p>
+        </div>
+        <div class="info">
+          <span>🥵 Feels Like</span>
+          <p id="feelsLike"></p>
+        </div>
+        <div class="info">
+          <span>💧 Humidity</span>
+          <p id="humidity"></p>
+        </div>
+        <div class="info">
+          <span>🌧️ Rain</span>
+          <p id="rain"></p>
+        </div>
+        <div class="info">
+          <span>☁️ Cloud Cover</span>
+          <p id="cloudCover"></p>
+        </div>
+        <div class="info">
+          <span>💨 Wind Speed</span>
+          <p id="windSpeed"></p>
+        </div>
+        <div class="info">
+          <span>👀 Visibility</span>
+          <p id="visibility"></p>
+        </div>
+        <div class="info">
+          <span>🌡️ Pressure</span>
+          <p id="pressure"></p>
+        </div>
+        <div class="info">
+          <span>🌦️ Precipitation</span>
+          <p id="precipitation"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
