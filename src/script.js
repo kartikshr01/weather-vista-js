@@ -65,7 +65,7 @@ async function getWeatherDetails(cityCoordinates){
         const latitude = cityDetails.latitude;
         const longitude = cityDetails.longitude;
 
-        const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,apparent_temperature,relative_humidity_2m,rain,wind_speed_10m,visibility,cloud_cover,weather_code,surface_pressure,precipitation`;
+        const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&timezone=auto&current=temperature_2m,apparent_temperature,relative_humidity_2m,rain,wind_speed_10m,visibility,cloud_cover,weather_code,surface_pressure,precipitation`;
 
         const response = await fetch(url);
 
