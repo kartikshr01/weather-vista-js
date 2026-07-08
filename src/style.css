@@ -54,8 +54,8 @@ body {
 .searchSection #city {
     border: 2px solid #2a7b9b95;
     border-radius: 10px;
-    flex:1;
-    max-width:450px;
+    flex: 1;
+    max-width: 450px;
     padding: 10px 20px;
     font-size: 15px;
     outline: none;
@@ -88,9 +88,9 @@ body {
     transition: 0.3s;
 }
 
-.buttons:disabled{
+.buttons:disabled {
     cursor: not-allowed;
-    opacity:0.6;
+    opacity: 0.6;
 }
 
 #loading {
@@ -112,19 +112,21 @@ body {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
 }
 
-@keyframes fadeIn{
-    from{
-        opacity:0;
-        transform:translateY(25px);
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
     }
-    to{
-        opacity:1;
-        transform:translateY(0);
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -132,7 +134,7 @@ body {
     width: 100%;
     padding: 30px;
     transition: background 0.8s ease;
-    animation:fadeIn .5s ease;
+    animation: fadeIn .5s ease;
 }
 
 
@@ -164,7 +166,7 @@ body {
 }
 
 .info {
-    background: rgba(255,255,255,0.45);
+    background: rgba(255, 255, 255, 0.45);
     backdrop-filter: blur(8px);
     border-radius: 12px;
     padding: 18px;
@@ -172,7 +174,7 @@ body {
     transition: 0.3s;
 }
 
-.info:hover{
+.info:hover {
     transform: translateY(-4px);
 }
 
@@ -188,5 +190,147 @@ body {
     color: #222;
 }
 
+@media (max-width: 768px) {
 
+    .container {
+        width: 95%;
+        padding: 35px 20px;
+        margin: 25px 0;
+    }
 
+    .container #projectTitle {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .container #description {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .searchSection {
+        flex-direction: column;
+        padding: 0;
+        gap: 12px;
+    }
+
+    .searchSection #city {
+        width: 100%;
+        max-width: none;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+
+    .weatherInfo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #temperature {
+        font-size: 42px;
+    }
+
+    #weatherIcon {
+        font-size: 60px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 25px 18px;
+        border-radius: 12px;
+    }
+
+    .container #projectTitle {
+        font-size: 28px;
+    }
+
+    .container #description {
+        font-size: 16px;
+    }
+
+    .searchSection {
+        gap: 10px;
+    }
+
+    .searchSection #city {
+        font-size: 14px;
+        padding: 12px 15px;
+    }
+
+    .buttons {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .weatherCard {
+        padding: 20px 5px;
+    }
+
+    #weatherIcon {
+        font-size: 52px;
+    }
+
+    #temperature {
+        font-size: 36px;
+    }
+
+    #weatherDescription {
+        font-size: 17px;
+    }
+
+    .weatherInfo {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .info {
+        padding: 16px;
+    }
+
+    .info span {
+        font-size: 14px;
+    }
+
+    .info p {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .container {
+        padding: 20px 12px;
+    }
+
+    .container #projectTitle {
+        font-size: 24px;
+    }
+
+    .container #description {
+        font-size: 14px;
+    }
+
+    #temperature {
+        font-size: 30px;
+    }
+
+    #weatherIcon {
+        font-size: 45px;
+    }
+
+    .info {
+        padding: 14px;
+    }
+
+}
